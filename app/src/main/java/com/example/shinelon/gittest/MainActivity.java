@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * 监听锁屏和解锁通知，不能静态注册广播，只能动态注册
+     * 监听锁屏和解锁通知，不能静态注册广播，只能动态注册344344
      */
     private void initEvent() {
         IntentFilter filter = new IntentFilter();

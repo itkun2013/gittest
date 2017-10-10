@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.Window;
 import android.view.WindowManager;
@@ -35,6 +36,7 @@ public class HooliganActivity extends AppCompatActivity {
      * 开启保活页面
      */
     public static void startHooligan() {
+        Log.e("kkk","保活startHooligan");
         Intent intent = new Intent(MyApplication.getAppliactionContext(), HooliganActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         MyApplication.getAppliactionContext().startActivity(intent);
@@ -45,6 +47,7 @@ public class HooliganActivity extends AppCompatActivity {
      */
     public static void killHooligan() {
         if (instance != null) {
+            Log.e("kkk","killHooligan");
             instance.finish();
         }
     }
